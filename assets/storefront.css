@@ -1,0 +1,35 @@
+/* Only commerce components: colors, fonts and spacing inherit the active theme. */
+.wg-products { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--wp--preset--spacing--60, 3rem) var(--wp--preset--spacing--40, 1.5rem); }
+.wg-product-card { min-width: 0; }
+.wg-product-card > a { color: inherit; text-decoration: none; }
+.wg-product-card h2 { font-size: var(--wp--preset--font-size--large, 1.5rem); margin-block: 1rem .5rem; }
+.wg-product-card p { margin-block: .5rem 1rem; }
+.wg-product-image { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+.wg-buy-box { margin-block: 1.5rem; }
+.wg-price { font-size: var(--wp--preset--font-size--large, 1.5rem); }
+.wg-actions { display: flex; gap: 1rem; align-items: end; flex-wrap: wrap; }
+.wg-actions label { display: grid; gap: .35rem; font-size: .875em; }
+.wg-actions input { width: 5rem; }
+.wg-buy-box input, .wg-buy-box select, .wg-cart select { padding: .6rem; border: 1px solid currentColor; border-radius: .25rem; background: var(--wp--preset--color--base, #fff); color: inherit; font: inherit; max-width: 100%; }
+.wg-buy-box [data-wiregum-variant-selector] label { display: grid; gap: .35rem; margin-block: .75rem; }
+.wg-buy-box button, .wg-cart button { cursor: pointer; }
+.wg-buy-box button:disabled, .wg-cart button:disabled { opacity: .5; cursor: not-allowed; }
+.wg-cart-link { border: 0; padding: 0; color: inherit; background: none; font: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: .15em; }
+.wg-shop-link { color: inherit; }
+.wg-notice { font-size: .8em; opacity: .75; }
+.wg-cart { box-sizing: border-box; inset: 0 0 0 auto; width: min(100%, 30rem); max-width: 100%; height: 100dvh; max-height: 100dvh; margin: 0; padding: 1.5rem; border: 0; border-inline-start: 1px solid currentColor; color: var(--wp--preset--color--contrast, #111); background: var(--wp--preset--color--base, #fff); font-family: inherit; overflow-y: auto; }
+.wg-cart::backdrop { background: #0006; }
+body:has(.wg-cart[open]) { overflow: hidden; }
+.wg-cart-header, .wg-cart-total, .wg-cart-controls { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.wg-cart-header h2 { margin: 0; font-size: 1.5rem; }
+.wg-cart-header { margin-bottom: 2rem; }
+.wg-cart button:not(.wp-element-button) { color: inherit; font: inherit; background: transparent; border: 1px solid currentColor; border-radius: .25rem; padding: .3rem .6rem; }
+.wg-cart [data-wiregum-cart-items] { list-style: none; margin: 0; padding: 0; }
+.wg-cart [data-wiregum-cart-item]:not([hidden]) { display: grid; gap: .75rem; border-bottom: 1px solid currentColor; padding-block: 1rem; }
+.wg-cart [data-wiregum-cart-item-price] { font-size: .85em; }
+.wg-cart [data-wiregum-cart-remove] { justify-self: start; }
+.wg-cart [data-wiregum-country-selector] { margin-top: 1.5rem; }
+.wg-cart [data-wiregum-checkout] { width: 100%; }
+.wg-pagination { display: flex; gap: 1rem; margin-block: 2rem; }
+.wg-buy-box :focus-visible, .wg-cart :focus-visible, .wg-cart-link:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+@media (max-width: 600px) { .wg-products { grid-template-columns: 1fr; } }

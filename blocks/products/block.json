@@ -1,0 +1,31 @@
+{
+  "apiVersion": 3,
+  "name": "wiregum/products",
+  "version": "1.0.0",
+  "title": "WireGum products",
+  "category": "widgets",
+  "icon": "cart",
+  "textdomain": "wiregum-wordpress",
+  "attributes": {
+    "perPage": {
+      "type": "number",
+      "default": 4
+    },
+    "paginate": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "editorScript": "wiregum-editor"
+}

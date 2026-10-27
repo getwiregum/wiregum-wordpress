@@ -1,0 +1,27 @@
+{
+  "apiVersion": 3,
+  "name": "wiregum/buy-box",
+  "version": "1.0.0",
+  "title": "WireGum buy box",
+  "category": "widgets",
+  "icon": "cart",
+  "textdomain": "wiregum-wordpress",
+  "attributes": {
+    "productId": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "editorScript": "wiregum-editor"
+}

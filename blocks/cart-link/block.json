@@ -1,0 +1,22 @@
+{
+  "apiVersion": 3,
+  "name": "wiregum/cart-link",
+  "version": "1.0.0",
+  "title": "WireGum cart",
+  "category": "widgets",
+  "icon": "cart",
+  "textdomain": "wiregum-wordpress",
+  "attributes": {},
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "editorScript": "wiregum-editor"
+}
