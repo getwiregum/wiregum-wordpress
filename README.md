@@ -27,9 +27,9 @@ WordPress owns editorial content. WireGum owns live prices, sellable variants, i
 
 ### From a plugin ZIP
 
-Download `wiregum-wordpress.zip` from a [GitHub release](https://github.com/getwiregum/wiregum-wordpress/releases) when available, then use **Plugins → Add New Plugin → Upload Plugin**, upload the ZIP and activate **WireGum for WordPress**.
+Download `wiregum-wordpress.zip` from the [latest GitHub release](https://github.com/getwiregum/wiregum-wordpress/releases/latest), then use **Plugins → Add New Plugin → Upload Plugin**, upload the ZIP and activate **WireGum for WordPress**.
 
-If there is no release ZIP yet, use the source installation below or build the ZIP yourself. The standard GitHub source download can also be installed through WordPress, but the packaged ZIP uses the stable `wiregum-wordpress/` folder name for repeatable updates.
+Use the attached `wiregum-wordpress.zip` asset for installation and updates. It uses the stable `wiregum-wordpress/` folder name and includes only the files needed to distribute the plugin. For development, use the source installation below or build the ZIP yourself.
 
 ### From source
 
